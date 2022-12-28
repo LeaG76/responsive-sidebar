@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Stylesheet CSS3 -->
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+        <!-- FontAwesome Icons -->
+        <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
+
+        <title>Responsive Side Navigation Bar</title>
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="logo-details">
+                <i class="fa-solid fa-code"></i>
+                <span class="logo-name">FullStack Lab</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="link-name">Accueil</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link-name" href="#">Accueil</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class="fa-solid fa-chart-area"></i>
+                            <span class="link-name">Graphiques</span>
+                        </a>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link-name" href="#">Graphiques</a></li>
+                        <li><a href="#">Série temporelle</a></li>
+                        <li><a href="#">Diagramme à barre</a></li>
+                        <li><a href="#">Diagramme circulaire</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        <span class="link-name">Notre équipe</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link-name" href="#">Notre équipe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span class="link-name">Conditions d'utilisation</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link-name" href="#">Conditions d'utilisation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span class="link-name">Politique de confidentialité</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link-name" href="#">Politique de confidentialité</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <span class="link-name">A propos</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link-name" href="#">A propos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="profile.png" alt="profile">
+                        </div>
+                        <div class="name-job">
+                            <div class="profile-name">Clefs en Main</div>
+                            <div class="profile-job">Les agences immobilières en France</div>
+                        </div>
+                        <i class="fa-regular fa-share-from-square"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <section class="home-section">
+            <div class="home-content">
+                <i class="fa-solid fa-bars"></i>
+                <span class="text">Test Test Test Test Test Test</span>
+            </div>
+        </section>
+
+        <script>
+            let arrow = document.querySelectorAll(".arrow");
+            for(var i = 0; i < arrow.length; i++) {
+                arrow[i].addEventListener("click", (e) => {
+                    let arrowParent = e.target.parentElement.parentElement;
+                    arrowParent.classList.toggle("showMenu");
+                });
+            }
+
+            let sidebar = document.querySelector(".sidebar");
+            let sidebarBtn = document.querySelector(".fa-bars");
+            console.log(sidebarBtn);
+            sidebarBtn.addEventListener("click", () => {
+                sidebar.classList.toggle("close");
+            })
+        </script>
+    </body>
+</html>
