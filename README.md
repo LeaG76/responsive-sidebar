@@ -1,5 +1,3 @@
-# responsive-sidebar
-
 <p align="center">
   <h1 align="center">Responsive Side Navigation Bar</h1>
   <p align="center">Responsive Dropdown Sidebar Menu using HTML CSS and JavaScript</p>
