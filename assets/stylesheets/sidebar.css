@@ -39,6 +39,7 @@
     font-weight: var(--font-weight-600);
     transition: all 0.3s ease;
     transition-delay: 0.1s;
+    margin-left: 10px;
 }
 
 .sidebar.close .logo-details .logo-name {
@@ -242,7 +243,7 @@
 .sidebar .profile-details {
     position: fixed;
     bottom: 0;
-    width: 320px;
+    width: 330px;
     display: flex;
     align-items: center;
     justify-content: start;
