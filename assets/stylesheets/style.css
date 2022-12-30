@@ -25,6 +25,12 @@
     --icon-height: 50px;
     --line-height: 50px;
     --img-size: 52px;
+    
+    /* Loading cup */
+    --cup-width: 180px;
+    --cup-height: 140px;
+    --cup-handle-width: 40px;
+    --cup-handle-height: 70px;
 
     /* Font size */
     --font-size-30: 30px;
