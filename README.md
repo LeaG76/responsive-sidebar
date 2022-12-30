@@ -16,3 +16,5 @@
   <img alt="Commit activity" src="https://img.shields.io/github/commit-activity/m/leag76/responsive-sidebar?color=%23A76844&logo=github&logoColor=white" />
   <img alt="Repo size" src="https://img.shields.io/github/repo-size/leag76/responsive-sidebar?color=%23C1AC95&logo=github&logoColor=white" />
 </p>
+
+https://www.youtube.com/watch?v=bFvfqUMjvsA&t=218s
