@@ -8,3 +8,35 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+:root {
+    /* Couleurs */
+    --primary-color: #1a1f15;
+    --secondary-color: #424f37;
+    --tertiary-color: #788E66;
+    --quaternaire-color: #a3694d;
+    --quinary-color: #E4E9DA;
+
+    /* Side bar */
+    --sidebar-width: 340px;
+    --sidebar-width-close: 78px;
+    --logo-height: 60px;
+    --icon-width: 78px;
+    --icon-height: 50px;
+    --line-height: 50px;
+    --img-size: 52px;
+
+    /* Font size */
+    --font-size-30: 30px;
+    --font-size-26: 26px;
+    --font-size-22: 22px;
+    --font-size-20: 20px;
+    --font-size-18: 18px;
+    --font-size-15: 15px;
+    --font-size-10: 10px;
+
+    /* Font weight */
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+}

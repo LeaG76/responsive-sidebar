@@ -5,39 +5,39 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 340px;
-    background: #1a1f15;
+    width: var(--sidebar-width);
+    background: var(--primary-color);
     z-index: 100;
     transition: all 0.5s ease;
 }
 
 .sidebar.close {
-    width: 78px;
+    width: var(--sidebar-width-close);
 }
 
 /* Le logo */
 
 .sidebar .logo-details {
-    height: 60px;
+    height: var(--logo-height);
     width: 100%;
     display: flex;
     align-items: center;
 }
 
 .sidebar .logo-details i {
-    font-size: 30px;
-    color: #E4E9DA;
-    height: 50px;
-    min-width: 78px;
+    font-size: var(--font-size-30);
+    color: var(--quinary-color);
+    height: var(--icon-height);
+    min-width: var(--icon-width);
     text-align: center;
-    line-height: 50px;
+    line-height: var(--line-height);
 }
 
 .sidebar .logo-details .logo-name {
-    font-size: 22px;
-    color: #E4E9DA;
-    font-weight: 600;
-    transition: 0.3s ease;
+    font-size: var(--font-size-22);
+    color: var(--quinary-color);
+    font-weight: var(--font-weight-600);
+    transition: all 0.3s ease;
     transition-delay: 0.1s;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .sidebar .nav-links li:hover {
-    background: #424f37;
+    background: var(--secondary-color);
 }
 
 .sidebar .nav-links li .icon-link {
@@ -84,12 +84,12 @@
 }
 
 .sidebar .nav-links li i {
-    height: 50px;
-    min-width: 78px;
+    height: var(--icon-height);
+    min-width: var(--icon-width);
     text-align: center;
-    line-height: 50px;
-    color: #E4E9DA;
-    font-size: 20px;
+    line-height: var(--line-height);
+    color: var(--quinary-color);
+    font-size: var(--font-size-20);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -109,9 +109,9 @@
 }
 
 .sidebar .nav-links li a .link-name {
-    font-size: 18px;
-    font-weight: 400;
-    color: #E4E9DA;
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-400);
+    color: var(--quinary-color);
 }
 
 .sidebar.close .nav-links li a .link-name {
@@ -124,7 +124,7 @@
 .sidebar .nav-links li .sub-menu {
     padding: 6px 6px 14px 80px;
     margin-top: -10px;
-    background: #424f37;
+    background: var(--secondary-color);
     display: none;
 }
 
@@ -133,8 +133,8 @@
 }
 
 .sidebar .nav-links li .sub-menu a {
-    color: #E4E9DA;
-    font-size: 15px;
+    color: var(--quinary-color);
+    font-size: var(--font-size-15);
     padding: 5px 0;
     white-space: nowrap;
     opacity: 0.6;
@@ -174,7 +174,7 @@
 }
 
 .sidebar.close .nav-links li .sub-menu .link-name {
-    font-size: 18px;
+    font-size: var(--font-size-18);
     opacity: 1;
     display: block;
 }
@@ -197,17 +197,17 @@
 .sidebar .profile-details {
     position: fixed;
     bottom: 0;
-    width: 340px;
+    width: var(--sidebar-width);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #424f37;
+    background: var(--secondary-color);
     padding: 6px 0;
     transition: all 0.5s ease;
 }
 
 .sidebar.close .profile-details {
-    width: 78px;
+    width: var(--sidebar-width-close);
     background: none;
 }
 
@@ -217,12 +217,12 @@
 }
 
 .sidebar .profile-details img {
-    height: 52px;
-    width: 52px;
+    height: var(--img-size);
+    width: var(--img-size);
     object-fit: cover;
     border-radius: 16px;
     margin: 0 14px 0 12px;
-    background: #788E66;
+    background: var(--tertiary-color);
     transition: all 0.5s ease;
 }
 
@@ -232,9 +232,9 @@
 
 .sidebar .profile-details .profile-name,
 .sidebar .profile-details .profile-job {
-    color: #E4E9DA;
-    font-size: 18px;
-    font-weight: 500;
+    color: var(--quinary-color);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-500);
     white-space: nowrap;
 }
 
@@ -245,35 +245,35 @@
 }
 
 .sidebar .profile-details .profile-job {
-    font-size: 10px;
+    font-size: var(--font-size-10);
 }
 
 /* La zone d'accueil */
 
 .home-section {
     position: relative;
-    background: #E4E9DA;
+    background: var(--quinary-color);
     height: 100vh;
-    left: 340px;
-    width: calc(100% - 340px);
+    left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
     transition: all 0.5s ease;
 }
 
 .sidebar.close ~ .home-section {
-    left: 78px;
-    width: calc(100% - 78px);
+    left: var(--sidebar-width-close);
+    width: calc(100% - var(--sidebar-width-close));
 }
 
 .home-section .home-content {
-    height: 60px;
+    height: var(--logo-height);
     display: flex;
     align-items: center;
 }
 
 .home-section .home-content .fa-bars,
 .home-section .home-content .text {
-    color: #1a1f15;
-    font-size: 30px;
+    color: var(--primary-color);
+    font-size: var(--font-size-30);
 }
 
 .home-section .home-content .fa-bars {
@@ -282,6 +282,6 @@
 }
 
 .home-section .home-content .text {
-    font-size: 26px;
-    font-weight: 600;
+    font-size: var(--font-size-26);
+    font-weight: var(--font-weight-600);
 }
