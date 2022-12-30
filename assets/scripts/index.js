@@ -12,7 +12,7 @@ for(var i = 0; i < arrow.length; i++) {
 }
 
 const sidebar = document.querySelector(".sidebar");
-const sidebarBtn = document.querySelector(".fa-bars");
+const sidebarBtn = document.querySelector(".toggle");
 sidebarBtn.addEventListener("click", () => {
     sidebar.classList.toggle("close");
 });
