@@ -242,7 +242,7 @@
 .sidebar .profile-details {
     position: fixed;
     bottom: 0;
-    width: var(--sidebar-width);
+    width: 320px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -250,11 +250,16 @@
     padding: 6px 0;
     transition: all 0.5s ease;
     left: 0;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .sidebar.close .profile-details {
     width: var(--sidebar-width-close);
     background: none;
+    margin-left: 0;
+    margin-bottom: 10px;
 }
 
 .sidebar .profile-details .profile-content {
@@ -277,7 +282,7 @@
 }
 
 .sidebar.close .profile-details img {
-    padding: 10px;
+    padding: 5px;
 }
 
 .sidebar .profile-details .profile-name,
